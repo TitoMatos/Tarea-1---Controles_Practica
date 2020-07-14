@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Controles_Practica_1.MainPage">
+
+    <StackLayout Orientation="Vertical">
+        <Label Text="Mi Primera Aplicación" FontSize="Large"/>
+        <Label Text="Ingrese Nombre" FontSize="Medium"/>
+        <Entry x:Name="txtNombre"/>
+        
+        <Label Text="Ingrese Apellido" FontSize="Medium"/>
+        <Entry x:Name="txtApellido"/>
+        
+        <Label Text="Año de Nacimiento" FontSize="Medium"/>
+        <Entry x:Name="txtFecha"/>
+        
+        <Label Text="Lugar de Nacimiento" FontSize="Medium"/>
+        <Entry x:Name="txtLugar"/>
+
+        <Label Text="¿Es casado/a?" FontSize="Medium"/>
+        <CheckBox 
+         x:Name="check1"/>
+
+
+        <Picker Title="Profesión"
+        TitleColor="Red"
+                x:Name="picker1">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Programación</x:String>
+                    <x:String>Contaduría</x:String>
+                    <x:String>Diseño Grafico</x:String>
+                    <x:String>Animación</x:String>
+                    <x:String>Psicología</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+
+        <Button Text="Procesar" x:Name="btbMostrar" Clicked="BtbMostrar_Clicked"/>
+        <Label Text="By: Tito Daniel Matos Perozo" FontSize="Micro"/>
+        
+        
+
+    </StackLayout>
+
+
+</ContentPage>
